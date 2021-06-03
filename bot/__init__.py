@@ -44,7 +44,7 @@ if os.path.exists('authorized_chats.txt'):
 try:
     BOT_TOKEN = getConfig('BOT_TOKEN')
     OWNER_ID = int(getConfig('OWNER_ID'))
-    TELEGRAPH_TOKEN = getConfig('TELEGRAPH_TOKEN')
+    telegraph_token = getConfig('TELEGRAPH_TOKEN')
 except KeyError as e:
     LOGGER.error("One or more env variables missing! Exiting now")
     exit(1)
